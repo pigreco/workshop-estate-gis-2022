@@ -51,7 +51,7 @@
 
 **DESCRIZIONE**: <br> Hai mai utilizzato funzioni avanzate per utilizzare QGIS come un software CAD? Avanziamo con un flusso di lavoro che parte dallo straordinario contributo di Salvatore Fiandaca (pigrecoinfinito.com) per la gestione delle particelle catastali e avanza con l'obiettivo di condividere skills aggiundive in QGIS. Una demo per imparare a disegnare e progettare proprio come un CAD per poi proseguire con composizione di stampa avanzata.
 
-<p align="center"><a href="https://www.mastergiscience.it/2021/05/09/estate-gis-2021/" target="_blank"><img src="./imgs//locandina/../locandine/provvisoria.jpg" width="500" title="EstateGIS2022+6"></a></p>
+<p align="center"><a href="https://www.mastergiscience.it/2021/05/09/estate-gis-2021/" target="_blank"><img src="./imgs/campagnacomunicazioneestategis2022masteringiscience/FIANDACA_insta.jpg" width="500" title="EstateGIS2022+6"></a></p>
 
 ---
 
@@ -407,4 +407,4 @@ Video 1 | Video 2 | Video 3 | Video 4
 
 ## Prossimi eventi
 
-![](imgs/locandine/programma.png)
+![](./imgs/campagnacomunicazioneestategis2022masteringiscience/locandina_a3_complete_page-0001.jpg)
