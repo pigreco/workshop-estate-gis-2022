@@ -16,7 +16,7 @@
   - [link utili](#link-utili)
   - [Contatti](#contatti)
     - [Totò Fiandaca](#totò-fiandaca)
-- [Workshop WMS Catasto AdE in QGIS](#workshop-wms-catasto-ade-in-qgis)
+- [Workshop WMS Catasto (riepilogo 2021)](#workshop-wms-catasto-riepilogo-2021)
   - [Servizio WMS](#servizio-wms)
     - [Come aggiungere il Servizio WMS a QGIS](#come-aggiungere-il-servizio-wms-a-qgis)
     - [Quali dati espone il servizio WMS](#quali-dati-espone-il-servizio-wms)
@@ -30,7 +30,12 @@
     - [Plugin Magic Wand](#plugin-magic-wand)
       - [Workflow](#workflow-1)
     - [estrarre dati dai poligoni](#estrarre-dati-dai-poligoni)
-    - [estrarre dati lungo linee](#estrarre-dati-lungo-linee)
+- [Workshop EstateGIS 2022](#workshop-estategis-2022)
+  - [estrarre dati lungo linee](#estrarre-dati-lungo-linee)
+  - [Modellatore grafico](#modellatore-grafico)
+  - [Disegno CAD Avanzato](#disegno-cad-avanzato)
+  - [Plugin Cadastral Divisions](#plugin-cadastral-divisions)
+  - [Stampa](#stampa)
 - [Cosa occorre](#cosa-occorre)
   - [Software da installare](#software-da-installare)
   - [Plugin da installare](#plugin-da-installare)
@@ -93,11 +98,11 @@
     1. Estrarre i dati catastali lungo un tracciato stradale;
     2. Modellatore grafico;
     3. Disegno CAD avanzato;
-    4. Stampa tracciato e lista delle particelle;
-    5. Plugin Cadastral Divisions per il frazionamento
+    4. Plugin Cadastral Divisions per il frazionamento;
+    5. Stampa tracciato e lista delle particelle.
 
 
-[↑ torna su ↑](#workshop-estate-gis-2021-unipd)
+[↑ torna su ↑](#workshop-estate-gis-2022-unipd)
 
 ## QGIS e il WMS AdE
 
@@ -126,7 +131,7 @@
 
 ---
 
-# Workshop WMS Catasto AdE in QGIS
+# Workshop WMS Catasto (riepilogo 2021)
 
 ## Servizio WMS
 
@@ -178,7 +183,7 @@ NB: il GeoPackage creerà automaticamente il campo `fid`, tutti gli altri campi 
    3. copyright
 6. occhio alla scala di visualizzazione del layer;
 
-[↑ torna su ↑](#workshop-estate-gis-2021-unipd)
+[↑ torna su ↑](#workshop-estate-gis-2022-unipd)
 
 ## Espressione personalizzata
 
@@ -230,7 +235,7 @@ la funzione personalizzata nel Gruppo Custom del field calc:
 
 <p align="center"><a href="https://qgis.org/it/site/" target="_blank"><img src="./imgs/field_calc.png" width="600" title="Gruppo Custom - Field Calc"></a></p>
 
-[↑ torna su ↑](#workshop-estate-gis-2021-unipd)
+[↑ torna su ↑](#workshop-estate-gis-2022-unipd)
 
 ## campi virtuali
 
@@ -285,7 +290,7 @@ Per maggiori info: <https://github.com/lmotta/gimpselectionfeature_plugin/wiki>
 
 NB: il poligono che restituisce ha lo stesso EPSG del Progetto.
 
-[↑ torna su ↑](#workshop-estate-gis-2021-unipd)
+[↑ torna su ↑](#workshop-estate-gis-2022-unipd)
 
 ### estrarre dati dai poligoni
 
@@ -316,14 +321,38 @@ y( point_on_surface($geometry)),@project_crs),
 regexp_replace(@fp ,'^(.+)\\.(.+)\\.(.+)\\.(.+)_(.+)\\.(.+)$', '\\5/\\6')
 			)
 ```
+# Workshop EstateGIS 2022
 
-### estrarre dati lungo linee
+## estrarre dati lungo linee
 
-```
-........
-```
+ragionamento:
+1. tracciare punti lungo la linea;
+2. per ogni punto tracciato usare funzione personalizzata;
+3. eliminare i duplicati;
+4. splittare i campi;
+5. risultato finale.
 
-[↑ torna su ↑](#workshop-estate-gis-2021-unipd)
+![](imgs/IMG_01.png)
+
+## Modellatore grafico
+
+![](imgs/modello_grafico.png)
+
+## Disegno CAD Avanzato
+
+Gli snap, topologia
+
+## Plugin Cadastral Divisions
+
+![](imgs/frazionamento.png)
+
+## Stampa
+
+![](imgs/stampa.png)
+
+[↑ torna su ↑](#workshop-estate-gis-2022-unipd)
+
+---
 
 # Cosa occorre
 
@@ -339,9 +368,9 @@ Software con caratteristiche minime per seguire con profitto il workshop
 1. [GIMP Selection Feature](https://plugins.qgis.org/plugins/gimpselectionfeature_plugin/) <img src = "./imgs/plugin_gimp.png" width =15>;
 2. [Magic Wand](https://plugins.qgis.org/plugins/MagicWand-master/) <img src = "./imgs/plugin_magic.png" width =15>;
 3. [Nominatim Locator Filter](https://plugins.qgis.org/plugins/nominatim_locator_filter/) <img src = "https://raw.githubusercontent.com/rduivenvoorde/nominatim_locator_filter/master/icons/icon.svg" width =15>
-4. [Cadastral Divisions](https://github.com/Korto19/Cadastral_Divisions)
+4. [Cadastral Divisions](https://github.com/Korto19/Cadastral_Divisions) <img src = "https://plugins.qgis.org/media/cache/36/2c/362c01d3f053247076ef8846797c4fa4.png" width =15>
 
-[↑ torna su ↑](#workshop-estate-gis-2021-unipd)
+[↑ torna su ↑](#workshop-estate-gis-2022-unipd)
 
 # Caratteristiche utilizzate nel progetto
 
@@ -359,7 +388,7 @@ Software con caratteristiche minime per seguire con profitto il workshop
 12. Compositore di Stampe
 13. Plugin Frazionamenti.
 
-[↑ torna su ↑](#workshop-estate-gis-2021-unipd)
+[↑ torna su ↑](#workshop-estate-gis-2022-unipd)
 
 # Riferimenti utili
 
@@ -375,11 +404,10 @@ Software con caratteristiche minime per seguire con profitto il workshop
 - **Font Trueno** : <https://www.wfonts.com/font/trueno>
 - **Visual Style Guide** : <https://www.qgis.org/en/site/getinvolved/styleguide.html#trueno-fonts>
 - **Visual Studio Code** : <https://code.visualstudio.com/>
-- **onData** : <https://ondata.it/>
 - **OpenDataSicilia** : <http://opendatasicilia.it/>
 - **Blog Post di Andrea Borruso** : <https://medium.com/tantotanto/le-mappa-castali-diventano-finalmente-utilizzabili-821db2f84533>
 
-[↑ torna su ↑](#workshop-estate-gis-2021-unipd)
+[↑ torna su ↑](#workshop-estate-gis-2022-unipd)
 
 # Cosa c'è in questo repo
 
@@ -391,7 +419,7 @@ Software con caratteristiche minime per seguire con profitto il workshop
 - file `license` è il file che definisce la licenza del repository;
 - file `README.md` è questo file, con le info.
 
-[↑ torna su ↑](#workshop-estate-gis-2021-unipd)
+[↑ torna su ↑](#workshop-estate-gis-2022-unipd)
 
 # Video demo
 
@@ -403,7 +431,7 @@ Video 1 | Video 2 | Video 3 | Video 4
 
 **CC BY 4.0** - <https://creativecommons.org/licenses/by/4.0/deed.it>
 
-[↑ torna su ↑](#workshop-estate-gis-2021-unipd)
+[↑ torna su ↑](#workshop-estate-gis-2022-unipd)
 
 ## Prossimi eventi
 
