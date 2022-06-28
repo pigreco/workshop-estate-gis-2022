@@ -382,4 +382,4 @@ Video 1 | Video 2 | Video 3 | Video 4
 
 ## Prossimi eventi
 
-![](./imgs/campagnacomunicazioneestategis2022masteringiscience/locandina_a3_complete_page-0001.jpg)
+<p align="center"><a href="https://www.mastergiscience.it/2022/05/05/estate-gis-2022/" target="_blank"><img src="./imgs/locandine/locandina_a3_complete_page-0001.jpg" width="600" title="EstateGIS 2022"></a></p>
