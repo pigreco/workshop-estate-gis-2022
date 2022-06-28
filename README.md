@@ -20,8 +20,6 @@
   - [Servizio WMS](#servizio-wms)
     - [Come aggiungere il Servizio WMS a QGIS](#come-aggiungere-il-servizio-wms-a-qgis)
     - [Quali dati espone il servizio WMS](#quali-dati-espone-il-servizio-wms)
-  - [Creare un nuovo GeoPackage](#creare-un-nuovo-geopackage)
-  - [Impostazioni Progetto](#impostazioni-progetto)
   - [Espressione personalizzata](#espressione-personalizzata)
   - [campi virtuali](#campi-virtuali)
   - [Digitalizzazione particelle](#digitalizzazione-particelle)
@@ -39,7 +37,6 @@
 - [Cosa occorre](#cosa-occorre)
   - [Software da installare](#software-da-installare)
   - [Plugin da installare](#plugin-da-installare)
-- [Caratteristiche utilizzate nel progetto](#caratteristiche-utilizzate-nel-progetto)
 - [Riferimenti utili](#riferimenti-utili)
 - [Cosa c'è in questo repo](#cosa-cè-in-questo-repo)
 - [Video demo](#video-demo)
@@ -84,23 +81,12 @@
 
 1. Presentazione iniziale da parte degli organizzatori;
 2. Rapida illustrazione del Workshop Estate 2021
-   1. come aggiungere il WMS del catasto AdE in QGIS;
-   2. come usarle il WMS come layer;
-   3. quali layer sono presenti nel WMS e a quale scala sono visibili;
-   4. quali SR sono disponibili nel WMS;
-   5. come fare una semplice interrogare del WMS in QGIS;
-   6. quali dati espone il WMS;
-   7. come estrarre i dati esposti dal WMS;
-   8. come creare/usare espressioni personalizzate;
-   9.  come digitalizzare le particelle in modo veloce;
-   10. quali plugin usare per estrarre le particelle;
 3. Workshop Estate 2022
     1. Estrarre i dati catastali lungo un tracciato stradale;
     2. Modellatore grafico;
     3. Disegno CAD avanzato;
     4. Plugin Cadastral Divisions per il frazionamento;
     5. Stampa tracciato e lista delle particelle.
-
 
 [↑ torna su ↑](#workshop-estate-gis-2022-unipd)
 
@@ -152,36 +138,6 @@
 4. sezione;
 5. allegato;
 6. sviluppo
-
-
-
-## Creare un nuovo GeoPackage
-
-- Per chi volesse avere tutto pronto, scarica geopackage con progetto (posizionato in Sicilia)
-
-Per creare velocemente un nuovo **GeoPackage**, digitare `Ctrl+Shift+N`, altrimenti dal _Menu | Crea Vettore | Nuovo Layer GeoPackage_
-
-<p align="center"><a href="https://qgis.org/it/site/" target="_blank"><img src="./imgs/gpkg.png" width="400" title="Nuovo Layer GeoPackage"></a></p>
-
-1. definire il percorso e nome del GeoPackage;
-2. definire il nome della tabella (`catasto`);
-3. definire il Tipo di geometria (in questo esempio `Punto`);
-4. selezionare EPSG del Progetto (che deve essere EPSG del WMS Catasto);
-5. pigiare su `OK`
-
-NB: il GeoPackage creerà automaticamente il campo `fid`, tutti gli altri campi che ci serviranno saranno `campi virtuali` (vedi sotto)
-
-## Impostazioni Progetto
-
-1. definire l'area in cui lavorare (es: un comune);
-2. in funzione dell'area, definire EPSG del WMS (proiettato e non geografico);
-3. installare la funzione personalizzata;
-4. caricare il geopackage appena creato;
-5. aggiungere il layer WMS Catasto (vedi punto 2) e selezionare i layer:
-   1. Particelle;
-   2. vestizione;
-   3. copyright
-6. occhio alla scala di visualizzazione del layer;
 
 [↑ torna su ↑](#workshop-estate-gis-2022-unipd)
 
@@ -330,11 +286,13 @@ ragionamento:
 2. per ogni punto tracciato usare funzione personalizzata;
 3. eliminare i duplicati;
 4. splittare i campi;
-5. risultato finale.
+5. calcolo lunghezza tratto dentro ogni particella.
 
 ![](imgs/IMG_01.png)
 
 ## Modellatore grafico
+
+per realizzare un algoritmo di processing
 
 ![](imgs/modello_grafico.png)
 
@@ -342,7 +300,13 @@ ragionamento:
 
 Gli snap, topologia
 
+![](imgs/snap.png)
+
+![](imgs/disegno_CAD_avanzato.png)
+
 ## Plugin Cadastral Divisions
+
+COme effettuare frazionamenti su particelle convesse
 
 ![](imgs/frazionamento.png)
 
@@ -372,24 +336,6 @@ Software con caratteristiche minime per seguire con profitto il workshop
 
 [↑ torna su ↑](#workshop-estate-gis-2022-unipd)
 
-# Caratteristiche utilizzate nel progetto
-
-1. servizio WMS;
-2. Geopackage;
-3. espressioni personalizzate e non;
-4. espressioni regolari;
-5. campi virtuali;
-6. Plugin;
-7. GIMP;
-8. Etichette con funzione custom.
-9. Decorazioni: Copyright, Immagine, Etichetta Titolo;
-10. Modellatore grafico;
-11. Strumenti di disegno CAD avanzato;
-12. Compositore di Stampe
-13. Plugin Frazionamenti.
-
-[↑ torna su ↑](#workshop-estate-gis-2022-unipd)
-
 # Riferimenti utili
 
 - **WorkShop EstateGIS 2021** : <https://github.com/pigreco/workshop-estate-gis-2021>
@@ -406,6 +352,7 @@ Software con caratteristiche minime per seguire con profitto il workshop
 - **Visual Studio Code** : <https://code.visualstudio.com/>
 - **OpenDataSicilia** : <http://opendatasicilia.it/>
 - **Blog Post di Andrea Borruso** : <https://medium.com/tantotanto/le-mappa-castali-diventano-finalmente-utilizzabili-821db2f84533>
+- **slide INTRO** : <https://docs.google.com/presentation/d/1IhFlo7IOwcIEqYo1w1P_07PF-jXm8a5W/edit?usp=sharing&ouid=117726059730187290990&rtpof=true&sd=true>
 
 [↑ torna su ↑](#workshop-estate-gis-2022-unipd)
 
