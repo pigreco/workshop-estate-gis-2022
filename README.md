@@ -38,6 +38,7 @@
   - [Software da installare](#software-da-installare)
   - [Plugin da installare](#plugin-da-installare)
 - [RISULTATI EVENTO](#risultati-evento)
+  - [DOMANDE](#domande)
 - [Riferimenti utili](#riferimenti-utili)
 - [Cosa c'è in questo repo](#cosa-cè-in-questo-repo)
 - [Video demo](#video-demo)
@@ -343,6 +344,58 @@ Software con caratteristiche minime per seguire con profitto il workshop
 - numero massimo partecipanti ZOOM 171
 
 ![](imgs/screen01.png)
+
+## DOMANDE
+
+RACCOLTA DOMANDE PARTECIPANTI
+
+DAL CAD AL GIS: MAPPE CATASTALI, DISEGNO CAD E TAVOLE DI PROGETTO (Salvatore Fiandaca)
+
+Da Lorenzo Luisi a tutti 06:12 PM
+Ciao Totò, stai effettuando un'attività lecita sul WMS del Catasto. Puoi riassumere perché è lecita e che altro si può fare con la licenza open dell'AdE? Grazie.
+
+Da roberto a tutti 06:34 PM
+Buonasera, come potremmo fare per sostituire il codice Belfiore con il nome del comune?
+
+Da Carmelo D'AMICIS a tutti 06:36 PM
+Buonasera, è possibile ricercare le particelle nel wms catasto? Se si, come? 
+
+Da Arianna Baldoni a tutti 06:41 PM
+se creo una stampa da qgis, posso caricarla ugualmente georiferita su autocad map così come abbiamo appena visto su qgis? 
+
+Da JK a tutti 07:04 PM
+con evita sovrapposizione la parte sovrapposta non esiste proprio o va sotto?
+
+Da roberto boschin a tutti 07:05 PM
+sarebbero utili le quote lineari sul layout di stampa
+
+Da Elisa Crosilla a tutti 07:07 PM
+sono molto interessata al sistema del modello in qgis. vorrei chiedere se ci sono dei tutorial o manuali in merito da consultare per comprendere come funziona. Approfitto per ringraziare totò per le preziose informazioni e per i diversi tutorial sempre molto utili. Complimenti per il ciclo di conferenze!
+
+Da Elisa Crosilla a tutti 07:12 PM
+il sistema modello che totò ha fatto vedere per dare dei comandi in serie (l'ha utilizzato per inserire i punti a tot metri, associare i dati catastali, e per eliminare i punti con le stesse info).. è un sistema molto utile se si lavora con molti dati.. mi piacerebbe capire  meglio come si fa a costruire da zero il modello
+
+Da Gabriele Fargione a tutti 07:16 PM
+Una volta eseguito il frazionamento su QGIS, come si dialoga con PREGEO?
+
+Da Francesco.Pelullo a tutti 07:18 PM
+Segnalo il plugin QAD che aggiunge ulteriori strumenti CAD-like per il disegno in QGIS (mirror, trim etc)
+
+Da vincenzo piergiovanni a tutti 07:19 PM
+Sul comando "Abilita strumenti di digitalizzazione avanzata' è possibile ottenere polilinee 3D
+
+Da Antonio Di Sipio a tutti 07:22 PM
+si possono estratte le superfici dal wms del Catasto? sia nominali che cartografiche delle particelle?
+Da Francesco.Pelullo a tutti 07:23 PM
+@Toto': il dato estratto nel campo "foglio" è composto, segnalo che le ultime due cifre (normalmente 00) corrispondo alla sezione del foglio. Quindi, nel tuo esempio, il numero foglio è 089 sezione 'null'
+
+Da Francesco D'Abramo a tutti 07:24 PM
+Salve, visto io spessore delle Sue conoscenze su qgis potrebbe accennare il nome di qualche plugin utile all' analisi e all' elaborazione di dati in agricoltura? La ringrazio (spero di non essere uscito troppo fuori tema)
+
+Da Angelo Ballaera a tutti 07:28 PM
+Salve, nel compositore di stampa c'è modo di creare un cartiglio?
+
+[↑ torna su ↑](#workshop-estate-gis-2022-unipd)
 
 # Riferimenti utili
 
