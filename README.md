@@ -324,7 +324,7 @@ Software con caratteristiche minime per seguire con profitto il workshop
 
 ## Software da installare
 
-1. [QGIS 3.24 Tisler](https://qgis.org/it/site/) (o maggiore) <img src = "./imgs/qgis-icon32.png" width =15>;
+1. [QGIS 3.26 Buenos Aires](https://qgis.org/it/site/) (o maggiore) <img src = "./imgs/qgis-icon32.png" width =15>;
 2. [GIMP 2.10](https://www.gimp.org/) (attualmente GIMP 2.10.24) <img src = "./imgs/gimp_logo.png" width =15>;
 
 ##  Plugin da installare
