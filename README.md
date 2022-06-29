@@ -37,6 +37,7 @@
 - [Cosa occorre](#cosa-occorre)
   - [Software da installare](#software-da-installare)
   - [Plugin da installare](#plugin-da-installare)
+- [RISULTATI EVENTO](#risultati-evento)
 - [Riferimenti utili](#riferimenti-utili)
 - [Cosa c'è in questo repo](#cosa-cè-in-questo-repo)
 - [Video demo](#video-demo)
@@ -335,6 +336,13 @@ Software con caratteristiche minime per seguire con profitto il workshop
 4. [Cadastral Divisions](https://github.com/Korto19/Cadastral_Divisions) <img src = "https://plugins.qgis.org/media/cache/36/2c/362c01d3f053247076ef8846797c4fa4.png" width =15>
 
 [↑ torna su ↑](#workshop-estate-gis-2022-unipd)
+
+# RISULTATI EVENTO
+
+- 650 iscrizioni
+- numero massimo partecipanti ZOOM 171
+
+![](imgs/screen01.png)
 
 # Riferimenti utili
 
