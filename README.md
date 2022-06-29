@@ -124,7 +124,7 @@
 ### Come aggiungere il Servizio WMS a QGIS
 
 1. URL: `https://wms.cartografia.agenziaentrate.gov.it/inspire/wms/ows01.php`
-2. Gestione delle Sorgentidati | WMS/WMTS | Nuovo :
+2. Gestione delle Sorgenti dati | WMS/WMTS | Nuovo :
 
 ![](imgs/wms_01.png)
 
