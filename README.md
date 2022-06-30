@@ -346,6 +346,8 @@ Software con caratteristiche minime per seguire con profitto il workshop
 - numero massimo partecipanti ZOOM 171
 - numero massimo spettatori su Facebook xx
 
+![](imgs/screen00.png)
+
 ![](imgs/screen01.png)
 
 - video Facebook : <https://www.facebook.com/MasterGIScience/videos/1206098126894878>
