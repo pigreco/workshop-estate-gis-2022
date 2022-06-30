@@ -298,6 +298,8 @@ per realizzare un algoritmo di processing
 
 ![](imgs/modello_grafico.png)
 
+NB: nella cartella [Risorse](./risorse/tracciatoCatastoWMS.model3), il modello grafico utilizzato nell'esempio.
+
 ## Disegno CAD Avanzato
 
 Gli snap, topologia
@@ -342,6 +344,7 @@ Software con caratteristiche minime per seguire con profitto il workshop
 
 - 650 iscrizioni
 - numero massimo partecipanti ZOOM 171
+- numero massimo spettatori su Facebook xx
 
 ![](imgs/screen01.png)
 

@@ -1,0 +1,434 @@
+<!DOCTYPE model>
+<Option type="Map">
+  <Option type="Map" name="children">
+    <Option type="Map" name="native:fieldcalculator_1">
+      <Option value="true" type="bool" name="active"/>
+      <Option name="alg_config"/>
+      <Option value="native:fieldcalculator" type="QString" name="alg_id"/>
+      <Option value="" type="QString" name="color"/>
+      <Option type="Map" name="comment">
+        <Option value="178,223,138,255" type="QString" name="color"/>
+        <Option value="Aggiunge un campo testuale e lo popola con le info estratte dal WMS Catasto AdE.&#xa;&#xa;NB: occorre installare la funzione get_parcel_info" type="QString" name="component_description"/>
+        <Option value="85" type="double" name="component_height"/>
+        <Option value="921.5" type="double" name="component_pos_x"/>
+        <Option value="274.5" type="double" name="component_pos_y"/>
+        <Option value="159" type="double" name="component_width"/>
+        <Option value="true" type="bool" name="outputs_collapsed"/>
+        <Option value="true" type="bool" name="parameters_collapsed"/>
+      </Option>
+      <Option value="Calcolatore Campi" type="QString" name="component_description"/>
+      <Option value="30" type="double" name="component_height"/>
+      <Option value="686" type="double" name="component_pos_x"/>
+      <Option value="337" type="double" name="component_pos_y"/>
+      <Option value="200" type="double" name="component_width"/>
+      <Option name="dependencies"/>
+      <Option value="native:fieldcalculator_1" type="QString" name="id"/>
+      <Option name="outputs"/>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="FIELD_LENGTH">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="50" type="int" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="FIELD_NAME">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="catasto" type="QString" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="FIELD_PRECISION">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="0" type="int" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="FIELD_TYPE">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="2" type="int" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="FORMULA">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value=" get_parcel_info( $x,$y)" type="QString" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option value="native:pointsalonglines_1" type="QString" name="child_id"/>
+            <Option value="OUTPUT" type="QString" name="output_name"/>
+            <Option value="1" type="int" name="source"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="native:pointsalonglines_1">
+      <Option value="true" type="bool" name="active"/>
+      <Option name="alg_config"/>
+      <Option value="native:pointsalonglines" type="QString" name="alg_id"/>
+      <Option value="" type="QString" name="color"/>
+      <Option type="Map" name="comment">
+        <Option value="178,223,138,255" type="QString" name="color"/>
+        <Option value="Traccia punti lungo la geometria" type="QString" name="component_description"/>
+        <Option value="35" type="double" name="component_height"/>
+        <Option value="710" type="double" name="component_pos_x"/>
+        <Option value="180.5" type="double" name="component_pos_y"/>
+        <Option value="100" type="double" name="component_width"/>
+        <Option value="true" type="bool" name="outputs_collapsed"/>
+        <Option value="true" type="bool" name="parameters_collapsed"/>
+      </Option>
+      <Option value="Punti lungo la geometria" type="QString" name="component_description"/>
+      <Option value="30" type="double" name="component_height"/>
+      <Option value="517" type="double" name="component_pos_x"/>
+      <Option value="251" type="double" name="component_pos_y"/>
+      <Option value="200" type="double" name="component_width"/>
+      <Option name="dependencies"/>
+      <Option value="native:pointsalonglines_1" type="QString" name="id"/>
+      <Option name="outputs"/>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="DISTANCE">
+          <Option type="Map">
+            <Option value="@distanzatraipuntiinmetri" type="QString" name="expression"/>
+            <Option value="3" type="int" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="END_OFFSET">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="0" type="double" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option value="tracciato" type="QString" name="parameter_name"/>
+            <Option value="0" type="int" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="START_OFFSET">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="0" type="double" name="static_value"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="native:refactorfields_1">
+      <Option value="true" type="bool" name="active"/>
+      <Option name="alg_config"/>
+      <Option value="native:refactorfields" type="QString" name="alg_id"/>
+      <Option value="" type="QString" name="color"/>
+      <Option type="Map" name="comment">
+        <Option value="178,223,138,255" type="QString" name="color"/>
+        <Option value="Rielabora la tabella e splitta il campo Catasto nei suoi componenti: Codice Catastale del Comune, Foglio e Particella" type="QString" name="component_description"/>
+        <Option value="70" type="double" name="component_height"/>
+        <Option value="1272.5" type="double" name="component_pos_x"/>
+        <Option value="560" type="double" name="component_pos_y"/>
+        <Option value="125" type="double" name="component_width"/>
+        <Option value="true" type="bool" name="outputs_collapsed"/>
+        <Option value="true" type="bool" name="parameters_collapsed"/>
+      </Option>
+      <Option value="Riorganizza campi" type="QString" name="component_description"/>
+      <Option value="30" type="double" name="component_height"/>
+      <Option value="1094" type="double" name="component_pos_x"/>
+      <Option value="618" type="double" name="component_pos_y"/>
+      <Option value="162" type="double" name="component_width"/>
+      <Option name="dependencies"/>
+      <Option value="native:refactorfields_1" type="QString" name="id"/>
+      <Option type="Map" name="outputs">
+        <Option type="Map" name="tabella">
+          <Option value="native:refactorfields_1" type="QString" name="child_id"/>
+          <Option value="" type="QString" name="color"/>
+          <Option type="Map" name="comment">
+            <Option value="" type="QString" name="color"/>
+            <Option value="" type="QString" name="component_description"/>
+            <Option value="60" type="double" name="component_height"/>
+            <Option value="0" type="double" name="component_pos_x"/>
+            <Option value="0" type="double" name="component_pos_y"/>
+            <Option value="100" type="double" name="component_width"/>
+            <Option value="true" type="bool" name="outputs_collapsed"/>
+            <Option value="true" type="bool" name="parameters_collapsed"/>
+          </Option>
+          <Option value="tabella" type="QString" name="component_description"/>
+          <Option value="30" type="double" name="component_height"/>
+          <Option value="1249.5" type="double" name="component_pos_x"/>
+          <Option value="686" type="double" name="component_pos_y"/>
+          <Option value="103" type="double" name="component_width"/>
+          <Option type="invalid" name="default_value"/>
+          <Option value="false" type="bool" name="mandatory"/>
+          <Option value="tabella" type="QString" name="name"/>
+          <Option value="OUTPUT" type="QString" name="output_name"/>
+          <Option value="true" type="bool" name="outputs_collapsed"/>
+          <Option value="true" type="bool" name="parameters_collapsed"/>
+        </Option>
+      </Option>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="FIELDS_MAPPING">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option type="List" name="static_value">
+              <Option type="Map">
+                <Option value="@row_number" type="QString" name="expression"/>
+                <Option value="9" type="int" name="length"/>
+                <Option value="nro" type="QString" name="name"/>
+                <Option value="0" type="int" name="precision"/>
+                <Option value="2" type="int" name="type"/>
+              </Option>
+              <Option type="Map">
+                <Option value="&quot;catasto&quot;" type="QString" name="expression"/>
+                <Option value="100" type="int" name="length"/>
+                <Option value="catasto" type="QString" name="name"/>
+                <Option value="0" type="int" name="precision"/>
+                <Option value="10" type="int" name="type"/>
+              </Option>
+              <Option type="Map">
+                <Option value="regexp_replace(&quot;catasto&quot;,'^(.+)\\.(.+)\\.(.+)\\.(.+)_(.+)\\.(.+)$','\\4')" type="QString" name="expression"/>
+                <Option value="4" type="int" name="length"/>
+                <Option value="Belfiore" type="QString" name="name"/>
+                <Option value="0" type="int" name="precision"/>
+                <Option value="10" type="int" name="type"/>
+              </Option>
+              <Option type="Map">
+                <Option value="regexp_replace(&quot;catasto&quot;,'^(.+)\\.(.+)\\.(.+)\\.(.+)_(.+)\\.(.+)$','\\5')" type="QString" name="expression"/>
+                <Option value="10" type="int" name="length"/>
+                <Option value="foglio" type="QString" name="name"/>
+                <Option value="0" type="int" name="precision"/>
+                <Option value="10" type="int" name="type"/>
+              </Option>
+              <Option type="Map">
+                <Option value="regexp_replace(&quot;catasto&quot;,'^(.+)\\.(.+)\\.(.+)\\.(.+)_(.+)\\.(.+)$','\\6')" type="QString" name="expression"/>
+                <Option value="10" type="int" name="length"/>
+                <Option value="particella" type="QString" name="name"/>
+                <Option value="0" type="int" name="precision"/>
+                <Option value="10" type="int" name="type"/>
+              </Option>
+            </Option>
+          </Option>
+        </Option>
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option value="native:removeduplicatesbyattribute_1" type="QString" name="child_id"/>
+            <Option value="OUTPUT" type="QString" name="output_name"/>
+            <Option value="1" type="int" name="source"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="native:removeduplicatesbyattribute_1">
+      <Option value="true" type="bool" name="active"/>
+      <Option name="alg_config"/>
+      <Option value="native:removeduplicatesbyattribute" type="QString" name="alg_id"/>
+      <Option value="" type="QString" name="color"/>
+      <Option type="Map" name="comment">
+        <Option value="178,223,138,255" type="QString" name="color"/>
+        <Option value="Elimina eventuali punti con valori Catastali uguali" type="QString" name="component_description"/>
+        <Option value="47" type="double" name="component_height"/>
+        <Option value="1112" type="double" name="component_pos_x"/>
+        <Option value="309.5" type="double" name="component_pos_y"/>
+        <Option value="96" type="double" name="component_width"/>
+        <Option value="true" type="bool" name="outputs_collapsed"/>
+        <Option value="true" type="bool" name="parameters_collapsed"/>
+      </Option>
+      <Option value="Eliminare i duplicati in base all'attributo" type="QString" name="component_description"/>
+      <Option value="30" type="double" name="component_height"/>
+      <Option value="930" type="double" name="component_pos_x"/>
+      <Option value="396" type="double" name="component_pos_y"/>
+      <Option value="200" type="double" name="component_width"/>
+      <Option name="dependencies"/>
+      <Option value="native:removeduplicatesbyattribute_1" type="QString" name="id"/>
+      <Option name="outputs"/>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="FIELDS">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option type="StringList" name="static_value">
+              <Option value="catasto" type="QString"/>
+            </Option>
+          </Option>
+        </Option>
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option value="native:fieldcalculator_1" type="QString" name="child_id"/>
+            <Option value="OUTPUT" type="QString" name="output_name"/>
+            <Option value="1" type="int" name="source"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option type="Map" name="designerParameterValues">
+    <Option type="QgsProcessingOutputLayerDefinition" name="native:refactorfields_1:riorganizzato">
+      <Option type="Map">
+        <Option type="Map" name="create_options">
+          <Option value="System" type="QString" name="fileEncoding"/>
+        </Option>
+        <Option type="Map" name="sink">
+          <Option value="true" type="bool" name="active"/>
+          <Option value="1" type="int" name="type"/>
+          <Option value="TEMPORARY_OUTPUT" type="QString" name="val"/>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="QgsProcessingOutputLayerDefinition" name="native:removeduplicatesbyattribute_1:punti filtrati">
+      <Option type="Map">
+        <Option type="Map" name="create_options">
+          <Option value="System" type="QString" name="fileEncoding"/>
+        </Option>
+        <Option type="Map" name="sink">
+          <Option value="true" type="bool" name="active"/>
+          <Option value="1" type="int" name="type"/>
+          <Option value="TEMPORARY_OUTPUT" type="QString" name="val"/>
+        </Option>
+      </Option>
+    </Option>
+    <Option value="tracciato_56aba61d_3006_4ffa_9f98_650c2d291e39" type="QString" name="tracciato"/>
+  </Option>
+  <Option type="List" name="groupBoxes">
+    <Option type="Map">
+      <Option value="" type="QString" name="color"/>
+      <Option value="Elaborazione" type="QString" name="component_description"/>
+      <Option value="360" type="double" name="component_height"/>
+      <Option value="789.5" type="double" name="component_pos_x"/>
+      <Option value="303" type="double" name="component_pos_y"/>
+      <Option value="783" type="double" name="component_width"/>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option value="{26233118-be1f-4fab-a395-1881a2a86a52}" type="QString" name="uuid"/>
+    </Option>
+    <Option type="Map">
+      <Option value="166,206,227,255" type="QString" name="color"/>
+      <Option value="dati input" type="QString" name="component_description"/>
+      <Option value="214.7202206801448" type="double" name="component_height"/>
+      <Option value="245" type="double" name="component_pos_x"/>
+      <Option value="230.3601103400724" type="double" name="component_pos_y"/>
+      <Option value="272" type="double" name="component_width"/>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option value="{b8659399-01d3-44f3-b5b6-a4e9b66eb551}" type="QString" name="uuid"/>
+    </Option>
+    <Option type="Map">
+      <Option value="86,241,94,90" type="QString" name="color"/>
+      <Option value="OUTPUT" type="QString" name="component_description"/>
+      <Option value="252" type="double" name="component_height"/>
+      <Option value="1163.5" type="double" name="component_pos_x"/>
+      <Option value="621" type="double" name="component_pos_y"/>
+      <Option value="377.00000000000006" type="double" name="component_width"/>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option value="{fe87a8a6-6bd7-484b-87ad-c2e4ef01131f}" type="QString" name="uuid"/>
+    </Option>
+  </Option>
+  <Option type="Map" name="help">
+    <Option value="S. Fiandaca" type="QString" name="ALG_CREATOR"/>
+    <Option value="Estrae le informazioni esposte dal WMS Catasto AdE per tutte le particelle lungo un tracciato." type="QString" name="ALG_DESC"/>
+    <Option value="S. Fiandaca" type="QString" name="ALG_HELP_CREATOR"/>
+    <Option value="" type="QString" name="ALG_VERSION"/>
+    <Option value="" type="QString" name="HELP_URL"/>
+    <Option value="Dati Catastali WMS AdE" type="QString" name="SHORT_DESCRIPTION"/>
+    <Option value="Distanza minima per suddivisione tracciato" type="QString" name="distanzatraipuntiinmetri"/>
+    <Option value="Layer punti con i dati catastali" type="QString" name="native:removeduplicatesbyattribute_1:punti filtrati"/>
+    <Option value="Layer Lineare del tracciato" type="QString" name="tracciato"/>
+  </Option>
+  <Option name="modelVariables"/>
+  <Option value="toto" type="QString" name="model_group"/>
+  <Option value="tracciatoCatasto" type="QString" name="model_name"/>
+  <Option type="Map" name="parameterDefinitions">
+    <Option type="Map" name="distanzatraipuntiinmetri">
+      <Option value="0" type="int" name="data_type"/>
+      <Option value="30" type="double" name="default"/>
+      <Option type="invalid" name="defaultGui"/>
+      <Option value="Distanza tra i punti in metri" type="QString" name="description"/>
+      <Option value="0" type="int" name="flags"/>
+      <Option value="Distanza minima per suddivisione tracciato" type="QString" name="help"/>
+      <Option value="100" type="double" name="max"/>
+      <Option name="metadata"/>
+      <Option value="10" type="double" name="min"/>
+      <Option value="distanzatraipuntiinmetri" type="QString" name="name"/>
+      <Option value="number" type="QString" name="parameter_type"/>
+    </Option>
+    <Option type="Map" name="native:refactorfields_1:tabella">
+      <Option value="true" type="bool" name="create_by_default"/>
+      <Option value="-1" type="int" name="data_type"/>
+      <Option type="invalid" name="default"/>
+      <Option type="invalid" name="defaultGui"/>
+      <Option value="tabella" type="QString" name="description"/>
+      <Option value="0" type="int" name="flags"/>
+      <Option value="" type="QString" name="help"/>
+      <Option name="metadata"/>
+      <Option value="native:refactorfields_1:tabella" type="QString" name="name"/>
+      <Option value="sink" type="QString" name="parameter_type"/>
+      <Option value="true" type="bool" name="supports_append"/>
+      <Option value="true" type="bool" name="supports_non_file_outputs"/>
+    </Option>
+    <Option type="Map" name="tracciato">
+      <Option type="List" name="data_types">
+        <Option value="1" type="int"/>
+      </Option>
+      <Option type="invalid" name="default"/>
+      <Option type="invalid" name="defaultGui"/>
+      <Option value="Tracciato" type="QString" name="description"/>
+      <Option value="0" type="int" name="flags"/>
+      <Option value="Layer Lineare del tracciato" type="QString" name="help"/>
+      <Option name="metadata"/>
+      <Option value="tracciato" type="QString" name="name"/>
+      <Option value="vector" type="QString" name="parameter_type"/>
+    </Option>
+  </Option>
+  <Option type="StringList" name="parameterOrder">
+    <Option value="tracciato" type="QString"/>
+    <Option value="distanzatraipuntiinmetri" type="QString"/>
+  </Option>
+  <Option type="Map" name="parameters">
+    <Option type="Map" name="distanzatraipuntiinmetri">
+      <Option value="" type="QString" name="color"/>
+      <Option type="Map" name="comment">
+        <Option value="178,223,138,255" type="QString" name="color"/>
+        <Option value="Parametro in metri" type="QString" name="component_description"/>
+        <Option value="30" type="double" name="component_height"/>
+        <Option value="309.7644624851344" type="double" name="component_pos_x"/>
+        <Option value="303.24710750297305" type="double" name="component_pos_y"/>
+        <Option value="100" type="double" name="component_width"/>
+        <Option value="true" type="bool" name="outputs_collapsed"/>
+        <Option value="true" type="bool" name="parameters_collapsed"/>
+      </Option>
+      <Option value="distanzatraipuntiinmetri" type="QString" name="component_description"/>
+      <Option value="30" type="double" name="component_height"/>
+      <Option value="243" type="double" name="component_pos_x"/>
+      <Option value="246" type="double" name="component_pos_y"/>
+      <Option value="200" type="double" name="component_width"/>
+      <Option value="distanzatraipuntiinmetri" type="QString" name="name"/>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+    </Option>
+    <Option type="Map" name="tracciato">
+      <Option value="" type="QString" name="color"/>
+      <Option type="Map" name="comment">
+        <Option value="" type="QString" name="color"/>
+        <Option value="" type="QString" name="component_description"/>
+        <Option value="60" type="double" name="component_height"/>
+        <Option value="320" type="double" name="component_pos_x"/>
+        <Option value="15" type="double" name="component_pos_y"/>
+        <Option value="100" type="double" name="component_width"/>
+        <Option value="true" type="bool" name="outputs_collapsed"/>
+        <Option value="true" type="bool" name="parameters_collapsed"/>
+      </Option>
+      <Option value="tracciato" type="QString" name="component_description"/>
+      <Option value="30" type="double" name="component_height"/>
+      <Option value="245" type="double" name="component_pos_x"/>
+      <Option value="199" type="double" name="component_pos_y"/>
+      <Option value="200" type="double" name="component_width"/>
+      <Option value="tracciato" type="QString" name="name"/>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+    </Option>
+  </Option>
+</Option>
