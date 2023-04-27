@@ -351,6 +351,7 @@ Software con caratteristiche minime per seguire con profitto il workshop
 ![](imgs/screen01.png)
 
 - video Facebook : <https://www.facebook.com/MasterGIScience/videos/1206098126894878>
+- video Youtube : <https://youtu.be/uWWPU9riPPE>
 
 ## DOMANDE
 
